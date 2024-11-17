@@ -1,3 +1,84 @@
+To fulfill the assignment requirements for building a Movie Search App Prototype using React.js, let's break down the steps and code implementation. The app should have the following features:
+A search bar to allow users to input movie titles.
+A list of popular movies displayed by default.
+Fetch movie data from the OMDb API.
+A modal displaying additional details about a movie when clicked.
+We'll build this step-by-step using React, Axios for making API calls, and basic CSS for styling.
+Step-by-Step Breakdown
+Set up React App
+Install Dependencies
+Create Components
+MovieSearch: A component for searching movies.
+MovieCard: A component to display individual movie details.
+MovieModal: A modal to display detailed information about a selected movie.
+Manage State using React's useState hook.
+Fetch Data from the OMDb API using Axios.
+Style the Components.
+To start a React app, follow these steps:
+
+Step 1: Set Up the React App
+i)  Ensure Prerequisites
+  Install Node.js (which includes npm): Download it from Node.js official website.
+Verify installation:
+bash
+
+node -v
+npm -v
+ii) Now You can create the React app using create-react-app if it's not already set up.
+bash
+
+npx create-react-app movie-search-app
+
+If npx isn’t working, you might need to install it:
+bash
+
+npm install -g npx
+iii) you can go to folder 
+ bash
+cd movie-search-app
+npm install axios
+
+
+Step 2: OMDb API Key
+To interact with the OMDb API, you'll need an API key. Go to OMDb API and sign up for an API key. You can use the free tier for basic searches.
+
+Step 3: Create Components
+We'll create three components:
+MovieSearch.js - The search bar and search results.
+MovieCard.js - Display individual movie details (title, year).
+MovieModal.js - Display detailed movie information in a modal.
+MovieSearch.js
+This component will include the search bar and will fetch results from the OMDb API.
+\movie-app\src\Components\MovieSearch.js
+2. MovieCard.js
+This component will display basic movie information (title and year)
+\movie-app\src\Components\MovieCard.js
+3. MovieModal.js
+This component will display additional details when a movie is clicked.
+\movie-app\src\Components\MovieModal.js
+Step 4: Basic CSS Styling
+Here is the CSS to style the app, including the modal.
+movie-app\src\App.css
+Step 5: Run the App
+Replace 'your_omdb_api_key' with your actual OMDb API key.
+Run the app:
+bash
+npm start
+Visit http://localhost:3000 in your browser.
+Now, your app should allow users to search for movies, display a list of results, and show detailed information about a movie when clicked
+Deployment and Submission
+Push your code to a GitHub repository:
+bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
